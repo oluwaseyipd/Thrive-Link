@@ -141,6 +141,11 @@
   var edule = new Swiper(".testimonial-active .swiper-container", {
     speed: 600,
     spaceBetween: 30,
+    autoplay: {
+      delay: 3000, // Time in milliseconds between slides
+      disableOnInteraction: false, // Keep autoplay running even after user interaction
+    },
+    loop: true,
     pagination: {
       el: ".testimonial-active .swiper-pagination",
       clickable: true,
