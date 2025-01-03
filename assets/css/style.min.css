@@ -19255,10 +19255,10 @@ img {
 
 
 
-/* -------------------------------------- Other Pages */
+/* -------------------------------------- Other Pages Banner----------------------------------------------------*/
 .page-banner {
   height: 550px;
-  background-color: #e7f8ee;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19396,7 +19396,7 @@ img {
   }
 }
 .page-banner-content .breadcrumb li.active {
-  color: #309255;
+  color: var(--hover-color);
 }
 .page-banner-content .title {
   font-size: 40px;
@@ -19419,12 +19419,12 @@ img {
 }
 .page-banner-content .title span {
   position: relative;
-  color: #309255;
+  color: var(--hover-color);
 }
 .page-banner-content .title span:before {
   position: absolute;
   content: "";
-  background-image: url(../images/shape/shape-4.webp);
+  background-image: url(../images/shape/shape-4.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19497,7 +19497,7 @@ img {
   width: 140px;
   height: 140px;
   text-align: center;
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   border-radius: 50%;
   margin: 0 auto;
   padding: 10px;
@@ -19515,7 +19515,7 @@ img {
   }
 }
 .shape-icon-box .box-content .box-wrapper {
-  background-color: #309255;
+  background-color: var(--hover-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21261,10 +21261,13 @@ img {
     height: 300px;
   }
 }
+
+
+/* --------------------------------- Contact Page ------------------------------------ */
 .contact-wrapper {
   padding: 70px;
   padding-top: 20px;
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   border-radius: 10px;
 }
 @media only screen and (max-width: 767px),
@@ -21281,7 +21284,7 @@ img {
   }
 }
 .contact-info {
-  background-color: #e7f8ee;
+  background-color: var(--light-blue);
   padding: 70px 60px;
   border-radius: 15px;
   margin-top: 50px;
@@ -21344,7 +21347,7 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   border-radius: 50%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21363,10 +21366,10 @@ img {
   height: 70px;
   line-height: 78px;
   background-color: #fff;
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   border-radius: 50%;
   font-size: 30px;
-  color: #309255;
+  color: var(--hover-color);
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -21399,15 +21402,18 @@ img {
 .single-contact-info .info-content .title {
   font-size: 14px;
   font-weight: 400;
-  color: #309255;
+  color: #fff;
   margin-bottom: 0;
 }
 .single-contact-info .info-content p {
   font-size: 22px;
   font-weight: 500;
-  color: #212832;
+  color: #fff;
   margin-bottom: 0;
   margin-top: 15px;
+}
+.single-contact-info:hover .info-content p {
+  color: #fff;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-contact-info .info-content p {
@@ -21420,8 +21426,8 @@ img {
   }
 }
 .single-contact-info:hover .info-icon i {
-  background-color: #309255;
-  border-color: #309255;
+  background-color: var(--hover-color);
+  border-color: #fff;
   color: #fff;
 }
 .contact-form {
@@ -21463,13 +21469,13 @@ img {
   }
 }
 .contact-form .title span {
-  color: #309255;
+  color: var(--hover-color);
   position: relative;
 }
 .contact-form .title span:before {
   position: absolute;
   content: "";
-  background-image: url(../images/shape/shape-4.webp);
+  background-image: url(../images/shape/shape-4.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21494,6 +21500,7 @@ img {
   }
 }
 .contact-form .single-form .btn {
+  background:var(--very-light-blue);
   margin-top: 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -21503,7 +21510,7 @@ img {
   height: 600px;
 }
 .contact-form .single-form .btn.btn-outline {
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   line-height: 58px;
 }
 .contact-form .single-form .btn.btn-outline:hover {
@@ -21534,6 +21541,11 @@ img {
 .form-message.error {
   color: #ff0000;
 }
+
+
+
+
+/* ----------------------------Course Video Player ----------------------- */
 .courses-enroll-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21541,6 +21553,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
 .courses-video-player {
   width: 71.8%;
   padding-bottom: 80px;
