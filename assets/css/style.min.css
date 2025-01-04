@@ -20514,7 +20514,7 @@ img {
   }
 }
 .register-login-images {
-  background-color: #e7f8ee;
+  background-color: var(--very-light-blue);
   padding: 45px 40px 0;
   text-align: center;
   border-radius: 10px;
@@ -20533,7 +20533,7 @@ img {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  background-color: #309255;
+  background-color:var(--hover-color);
   top: 50px;
   left: 20%;
   position: absolute;
@@ -20594,7 +20594,7 @@ img {
   }
 }
 .register-login-form .title span {
-  color: var(--primary);
+  color: var(--hover-color);
   position: relative;
 }
 .register-login-form .title span:before {
@@ -20642,7 +20642,7 @@ img {
   border: 1px solid var(--hover-color);
   line-height: 58px;
   background-color:var(--very-light-blue);
-  color:#ff;
+  color:#fff;
 }
 
 .register-login-form .single-form .btn:hover {
