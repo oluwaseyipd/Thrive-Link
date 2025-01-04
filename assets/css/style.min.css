@@ -20665,7 +20665,7 @@ img {
 .login-wrapper {
   padding: 70px;
   padding-top: 20px;
-  border: 1px solid rgba(48, 146, 85, 0.2);
+  border: 1px solid var(--very-light-blue);
   border-radius: 10px;
 }
 @media only screen and (max-width: 575px) {
@@ -20674,7 +20674,7 @@ img {
   }
 }
 .login-images {
-  background-color: #e7f8ee;
+  background-color: var(--very-light-blue);
   padding: 45px 40px 0;
   text-align: center;
   border-radius: 10px;
@@ -20693,7 +20693,7 @@ img {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  background-color: #309255;
+  background-color: var(--hover-color);
   top: 50px;
   left: 20%;
   position: absolute;
@@ -20810,17 +20810,20 @@ img {
   border-color: var(--hover-color);
   color:#fff;
 }
-.btn-2{
-  background-color: #fff; 
-  color:#006cff;
+
+.login-form .single-form .btn:last-child {
+  border: 1px solid var(--hover-color);
+  line-height: 58px;
+  background-color:#fff;
+  color:var(--hover-color);
 }
 
-.btn-2:hover{
-  background-color: #006cff; 
+.login-form .single-form .btn:last-child:hover {
+  border: 1px solid var(--hover-color);
+  line-height: 58px;
+  background-color:var(--hover-color);
   color:#fff;
 }
-
-
 
 
 
