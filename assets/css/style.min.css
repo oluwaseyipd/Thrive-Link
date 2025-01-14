@@ -20469,19 +20469,26 @@ img {
   margin-top: 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  background-color: var(--hover-color);
+  color:#fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .register-login-form .single-form .btn:before {
   width: 600px;
   height: 600px;
 }
+
 .register-login-form .single-form button{
   background-color: var(--hover-color);
   color:#fff;
-}
 
-.register-login-form .single-form .btn {
+} 
+
+ .register-login-form .single-form .btn {
   border: 1px solid var(--hover-color);
-  line-height: 58px;
   background-color:var(--very-light-blue);
   color:#fff;
 }
@@ -20490,7 +20497,8 @@ img {
   background-color: var(--hover-color);
   border-color: var(--hover-color);
   color:#fff;
-}
+} 
+
 .register-login-form .single-form .google-login a{
   background-color: #fff; 
   color:var(--hover-color);
@@ -20629,6 +20637,12 @@ img {
   margin-top: 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  background-color: var(--hover-color);
+  color:#fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .login-form .single-form .btn:before {
   width: 600px;
