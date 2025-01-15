@@ -25347,13 +25347,13 @@ color: var(--hover-color);
   line-height: 55px;
   padding: 0 30px;
   font-size: 15px;
-  background-color: #fff;
+  background-color: var(--very-light-blue);
   border: 0;
-  color: var(--very-light-blue);
+  color: #fff;
 }
 .footer-widget .widget-subscribe .widget-form .btn:hover {
-  background-color: var(--very-light-blue);
-  color: #fff;
+  background-color: #fff;
+  color: var(--very-light-blue);
   border: 0;
 }
 .footer-widget-link {
