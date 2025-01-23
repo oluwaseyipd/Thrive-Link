@@ -20539,13 +20539,19 @@ color: var(--hover-color);
   color: #fff;
 }
 
-.register-login-form .single-form .google-login a {
+.register-login-form .single-form .btn:last-child {
+  border: 1px solid var(--hover-color);
+  line-height: 58px;
   background-color: #fff;
   color: var(--hover-color);
 }
-.register-login-form .single-form .google-login:hover a {
+
+.register-login-form .single-form .btn:last-child:hover {
+  border: 1px solid var(--hover-color);
+  line-height: 58px;
   background-color: var(--hover-color);
   color: #fff;
+}
 }
 
 /*------------------------ Login Page ---------------------------------*/
@@ -20718,6 +20724,8 @@ color: var(--hover-color);
   background-color: var(--hover-color);
   color: #fff;
 }
+
+
 
 /* --------------------------FAQ Section--------------------------- */
 
@@ -21087,6 +21095,11 @@ color: var(--hover-color);
   margin-bottom: 0;
   margin-top: 15px;
 }
+.single-contact-info:hover .info-content p a{
+  color: #fff;
+  text-decoration: underline;
+}
+
 .single-contact-info:hover .info-content p {
   color: #fff;
 }
