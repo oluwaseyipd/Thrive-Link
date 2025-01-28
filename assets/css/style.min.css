@@ -15852,10 +15852,10 @@ img {
   color: #212832;
 }
 .mobile-top p a:hover {
-  color: var(--primary);
+  color: var(--hover-color);
 }
 .mobile-top p i {
-  color: var(--primary);
+  color: var(--hover-color);
   font-size: 20px;
   padding-right: 15px;
 }
@@ -15896,7 +15896,7 @@ img {
   height: 45px;
   line-height: 41px;
   padding: 0 30px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--hover-color);
   border-radius: 5px;
   background-color: #fff;
 }
@@ -15906,7 +15906,7 @@ img {
   }
 }
 .mobile-sign-in-up ul li a:hover {
-  background-color: var(--primary);
+  background-color: var(--hover-color);
   color: #fff;
 }
 .mobile-menu-items {
@@ -15998,10 +15998,10 @@ img {
 }
 .mobile-social .social li a {
   font-size: 20px;
-  color: #212832;
+  color: var(--light-blue);
 }
 .mobile-social .social li a:hover {
-  color: var(--primary);
+  color: var(--hover-color);
 }
 .login-header {
   background-color: #212832;
@@ -16744,13 +16744,21 @@ img {
   color: #fff;
 }
 @media only screen and (max-width: 767px) {
+  .slider-courses-box .box-content img{
+    height: 40px;
+    width: 40px;
+  }
   .slider-courses-box .box-content p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 575px) {
+  .slider-courses-box .box-content img{
+    height: 30px;
+    width: 30px;
+  }
   .slider-courses-box .box-content p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .slider-rating-box {
@@ -16774,6 +16782,7 @@ img {
 }
 @media only screen and (max-width: 575px) {
   .slider-rating-box {
+    display: none;
     right: 15px;
   }
 }
