@@ -18904,17 +18904,31 @@ h5 {
   width: 100%;
   height: 100%;
 }
-.shape-icon-box .box-content .box-wrapper i {
+.shape-icon-box .box-content .box-wrapper img {
+  width: 70px;
+  height:70px;
   font-size: 70px;
   color: #fff;
   display: block;
   line-height: 1;
 }
 @media only screen and (max-width: 767px) {
-  .shape-icon-box .box-content .box-wrapper i {
+  .shape-icon-box .box-content .box-wrapper img {
+    width: 50px;
+    height:50px;
     font-size: 40px;
   }
 }
+
+@media only screen and (max-width: 575px) {
+  .shape-icon-box .box-content .box-wrapper img {
+    width: 40px;
+    height:40px;
+    font-size: 40px;
+  }
+}
+
+
 .about-images {
   position: relative;
   overflow: hidden;
