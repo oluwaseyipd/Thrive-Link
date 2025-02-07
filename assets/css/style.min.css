@@ -18892,6 +18892,7 @@ h5 {
   .shape-icon-box .box-content {
     width: 80px;
     height: 80px;
+    margin-top: 16px;
   }
 }
 .shape-icon-box .box-content .box-wrapper {
