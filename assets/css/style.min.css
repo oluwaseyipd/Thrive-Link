@@ -18662,6 +18662,11 @@ h5 {
     left: 30px;
   }
 }
+@media only screen and (max-width: 575px) {
+  .page-banner .shape-1 {
+    display: none;
+  }
+}
 .page-banner .shape-2 {
   position: absolute;
   bottom: 0;
