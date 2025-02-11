@@ -19219,89 +19219,146 @@ h5 {
 
 /* ------------------------------Team Section----------------------------- */
 .team-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
   padding-top: 50px;
 }
 
+/* Ensure team members resize properly */
 .team-container .team-member {
+  flex: 1 1 calc(33.33% - 20px); /* Minimum width of 300px, but grows flexibly */
+  max-width: 30%; /* Increase this for a larger team member box */
   position: relative;
-            /* overflow: hidden; */
-            /* border-radius: 10px; */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: #fff;
+  margin-bottom: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  overflow: visible; /* Ensures content doesn't overflow */
+  border-radius: 10px;
 }
+
+/* Ensure image fits inside the box */
 .team-container .team-member img {
   width: 100%;
-  height: auto;
+  height: 380px;
   display: block;
 }
 
+/* Position the team-info to extend beyond the image */
 .team-container .team-member .team-info {
   position: absolute;
-            bottom: -70px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            background: white;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+  bottom: -50px; /* Moves part of the box beyond the image */
+  left: 50%;
+  transform: translateX(-50%) translateY(30px); /* Extends it more downward */
+  width: 90%;
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect: move it up slightly */
+.team-container .team-member:hover .team-info {
+  box-shadow: 0 5px 0 0 var(--very-light-blue);
+}
+
+/* Adjust text styles */
 .team-container .team-member .team-info .team-name {
   margin: 10px 0 5px;
-  font-size: 30px;
-  font-weight:bold;
+  font-size: 24px;
+  font-weight: bold;
   color: #000;
 }
 
 .team-container .team-member .team-info .team-role {
-  color: #666;
-  font-size: 20px;
+  color: var(--hover-color);
+  font-size: 18px;
   font-weight: semibold;
-  color:var(--hover-color);
 }
 
+/* Center social icons */
 .team-container .team-member .team-info .team-icons {
   margin-top: 10px;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  justify-content: center;
+  gap: 10px;
 }
 
-.team-container .team-member .team-info .team-icons a{
-  width: 60px;
-  height: 60px;
-  padding: 15px;
+/* Style the social icons */
+.team-container .team-member .team-info .team-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--very-light-blue);
   border: 1px solid var(--very-light-blue);
   border-radius: 50%;
-  margin: 0 5px;
-  line-height:0;
-  align-items: center; 
-  justify-content: center; 
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-.team-container .team-member .team-info .team-icons a i{  
+
+.team-container .team-member .team-info .team-icons a i {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
 }
-.team-container .team-member .team-info .team-icons a:hover{
-  width: 60px;
-  height: 60px;
+
+.team-container .team-member .team-info .team-icons a:hover {
   background-color: #fff;
   border: 1px solid var(--very-light-blue);
-  border-radius: 50%;
-  margin: 0 5px;
-  text-decoration: none;
 }
-.team-container .team-member .team-info .team-icons a i:hover{
-color: var(--hover-color);
+
+.team-container .team-member .team-info .team-icons a i:hover {
+  color: var(--hover-color);
 }
+
+/* 🔹 Responsive Adjustments for Smaller Screens */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-container {
+    justify-content: center; /* Centers items properly */
+  }
+
+  .team-container .team-member {
+    flex: 1 1 45%; /* Two members per row */
+    max-width: 45%; /* Prevents them from getting too big */
+    margin-bottom: 100px; /* Adds space between rows */
+  }
+}
+
+
+@media (max-width: 767px) {
+  .team-container {
+    justify-content: center; /* Centers items properly */
+  }
+
+  .team-container .team-member {
+    flex: 1 1 75%; /* Two members per row */
+    max-width: 75%; /* Prevents them from getting too big */
+    margin-bottom: 100px; /* Adds space between rows */
+  }
+
+}
+
+@media (max-width: 575px) {
+  .team-container {
+    flex-direction: column; /* Stack members vertically */
+    align-items: center;
+  }
+
+  .team-container .team-member {
+    flex: 1 1 100%; /* One per row */
+    max-width: 90%; /* Ensures it takes full width */
+    margin-bottom: 100px; /* Adds space below each card */
+  }
+}
+
+
+
+
 .single-team {
   text-align: center;
   margin-top: 50px;
